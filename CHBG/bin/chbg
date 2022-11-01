@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+images=()
+search_dir=/home/jianclash/Pictures/ThePrimeagenWallpapers
+
+for entry in "$search_dir"/*
+do
+  images+=($entry)
+done
+
+rand=$[$RANDOM % ${#images[@]}]
+image=${images[$rand]}
+
+feh --bg-max $image
