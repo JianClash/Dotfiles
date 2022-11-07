@@ -4,4 +4,6 @@ local inoremap = require("jianclash.keymap").inoremap
 
 --nnoremap("<leader>n", "<cmd>Ex<CR>")
 inoremap("jk", "<ESC>")
+nnoremap("<leader>n", "<cmd>Ex<CR>")
+nnoremap("<leader>p", "<cmd>:w | !black -q %<CR><CR>")
 

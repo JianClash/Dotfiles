@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 images=()
-search_dir=/home/jianclash/Pictures/ThePrimeagenWallpapers
+search_dir=/home/jianclash/Pictures/AstheticWallpapers/
 
 for entry in "$search_dir"/*
 do

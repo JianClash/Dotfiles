@@ -7,13 +7,26 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use "wbthomason/packer.nvim"
 
-  use "nvim-lua/plenary.nvim"
+  use {
+      'nvim-treesitter/nvim-treesitter', -- Better syntax highlighting
+      run = ':TSUpdate'
+  }
 
-  use "folke/tokyonight.nvim"
+  use "nvim-lua/plenary.nvim"
 
   use "nvim-telescope/telescope.nvim"
 
+  -- Functionalities
   use "jiangmiao/auto-pairs"
+
+  -- ColorSchemes
+  use "folke/tokyonight.nvim"
+
+  -- Tabline
+  use {
+    "nvim-lualine/lualine.nvim",
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
